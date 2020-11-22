@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
+## Installation
+
+You must have
+* Node.js LTS. If you don't have it, [go here](https://nodejs.org/en/) to see how to download it.
+* The Angular CLI to work in this project. If you don't have it, [go here](https://cli.angular.io/) to see how to download it.
+
+Make sure you have the dependencies of the project. If you don't have them, run the following command at the project's root to download them: `npm ci`.
+
+To run the project see [this section](#Development-server).
+
 ## Important directories
 
 * `src/app/modules/views/`
