@@ -1,5 +1,5 @@
 <mat-toolbar color="primary" id = "toolbar">
-  <button mat-icon-button aria-label="Menu" (click)="drawer.toggle()">
+  <button mat-icon-button aria-label="Menu" (click)="drawer.toggle()" *ngIf="user">
     <mat-icon>menu</mat-icon>
   </button>
   <img class="logo_img" src="assets/logo_sin_letras.png">
