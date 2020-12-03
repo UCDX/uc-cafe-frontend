@@ -1,7 +1,29 @@
 .logo{
-position: Absolute;
+position: Relative;
 width: 20%;
 height: 45%;
 left: 556px;
-top: 101px;
+top: 10px;
 }
+
+.my-form {
+display: flex;
+  justify-content: center
+}
+
+.example-full-width {
+  width: 100%;
+}
+ .card {
+position: Relative;
+width: 70%;
+height: 45%;
+left: 130px;
+background-color: #EEEEEE;
+}
+
+
+
+
+
+

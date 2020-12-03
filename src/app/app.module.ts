@@ -27,7 +27,8 @@ import { HomeComponent } from './modules/views/home';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ComponentsModule
+    ComponentsModule,
+    MaterialModule
   ],
 exports: [
     ComponentsModule,
