@@ -5,24 +5,21 @@
         <div class="card-body">
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                    <input type="text" formControlName="username" placeholder="Usuario" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                    <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
                     <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                         <div *ngIf="f.username.errors.required">Username is required</div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="password" formControlName="passwd" placeholder="Contraseña" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.passwd.errors }" />
+                    <input type="password" formControlName="passwd" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.passwd.errors }" />
                     <div *ngIf="submitted && f.passwd.errors" class="invalid-feedback">
                         <div *ngIf="f.passwd.errors.required">Se requiere contraseña</div>
                     </div>
                 </div>
-                <button mat-raised-button [disabled]="loading" class="btn btn-primary" color = "accent" style="float: right; margin: 10px;">
+                <button [disabled]="loading" class="btn btn-primary">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
                     Login
                 </button>
-<button mat-raised-button  type = "reset" style="color:#FF4081; float: right; margin: 10px;">
-Limpiar
-</button>
                 <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
             </form>
         </div>

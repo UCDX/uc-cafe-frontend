@@ -9,7 +9,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';   
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';   
 let modules = [
   MatToolbarModule, 
   MatIconModule,
@@ -20,7 +20,8 @@ let modules = [
   MatMenuModule,
   MatCardModule,
   MatSelectModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  FormsModule
 ]
 
 
