@@ -4,7 +4,7 @@ import { first } from 'rxjs/operators';
 import { User } from '@app/modules/modelos';
 import { UserService } from '@app/modules/servicios';
 
-@Component({ templateUrl: 'home.component.html' })
+@Component({ templateUrl: 'home.component.html', styleUrls: ['./home.component.css'] })
 export class HomeComponent {
     loading = false;
     users: User[];
