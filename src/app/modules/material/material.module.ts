@@ -8,8 +8,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu'; 
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';   
-
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatPaginatorModule } from '@angular/material/paginator';   
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';   
 let modules = [
   MatToolbarModule, 
   MatIconModule,
@@ -20,7 +21,9 @@ let modules = [
   MatMenuModule,
   MatCardModule,
   MatSelectModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  FormsModule,
+  MatPaginatorModule
 ]
 
 

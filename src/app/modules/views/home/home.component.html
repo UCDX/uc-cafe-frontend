@@ -1,0 +1,76 @@
+﻿<li *ngFor="let user of users">
+    {{user.firstName}} {{user.lastName}}</li>
+
+<h1 class="center">PRODUCTOS DISPONIBLES</h1>
+
+<h2 class="center">OPCIONES DE BÚSQUEDA</h2>
+
+<hr width="75%" color="black">
+
+<div class="box">
+    <div>
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Pasta pomodoro</mat-card-title>
+            </mat-card-header>
+            <img class="imagen" mat-card-image src="assets/Pasta.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    Pasta de la casa con salsa de tomate <br> Precio: $50
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="texto">
+                <button mat-button>COMPRAR AHORA</button>
+                <button mat-button>AGREGAR AL CARRITO</button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+
+    <div>
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Hamburguesa clásica</mat-card-title>
+            </mat-card-header>
+            <img class="imagen" mat-card-image src="assets/Hamburguesa.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    Hamburguesa clásica con carne de res con papas <br> Precio: $50
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="texto">
+                <button mat-button>COMPRAR AHORA</button>
+                <button mat-button>AGREGAR AL CARRITO</button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+
+    <div>
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Tacos al pastor</mat-card-title>
+            </mat-card-header>
+            <img class="imagen" mat-card-image src="assets/Tacos.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    Tacos al pastor de carne de puerco <br> Precio: $50
+                </p>
+            </mat-card-content>
+            <mat-card-actions class="texto">
+                <button mat-button>COMPRAR AHORA</button>
+                <button mat-button>AGREGAR AL CARRITO</button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+
+</div>
+
+<div>
+    <mat-paginator [length]="20" [pageSize]="1" [pageSizeOptions]="[5, 10, 15, 20]">
+    </mat-paginator>
+</div>

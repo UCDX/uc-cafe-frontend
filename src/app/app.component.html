@@ -1,14 +1,20 @@
 <mat-toolbar color="primary" id = "toolbar">
-  <button mat-icon-button aria-label="Menu" (click)="drawer.toggle()">
+  <button mat-icon-button aria-label="Menu" (click)="drawer.toggle()" *ngIf="user">
     <mat-icon>menu</mat-icon>
   </button>
   <img class="logo_img" src="assets/logo_sin_letras.png">
   <span>UC Café</span>
   <span class="spacer"></span>
-  <button mat-icon-button aria-label="User account">
+  <button mat-icon-button aria-label="User account" *ngIf="user">
     <mat-icon>account_circle</mat-icon>
   </button>
-</mat-toolbar>
+<nav class="navbar navbar-expand navbar " *ngIf="user"> 
+<div class="navbar-nav"> 
+<button mat-icon-button aria-label="Logout" class="nav-item nav-link" (click)="logout()">Logout
+</button> 
+</div> 
+</nav>
+
 <mat-drawer-container class="example-container" autosize id = "sidenav">
   <mat-drawer #drawer class="drawer" mode="over">
     <button mat-button color="accent" class="menu-btn" routerLink=""> 
@@ -24,3 +30,4 @@
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+
